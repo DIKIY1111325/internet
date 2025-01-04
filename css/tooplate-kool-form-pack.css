@@ -594,5 +594,9 @@ strong {
   .countdown-item {
     margin: 10px;
   }
+.text-content {
+    color: lightgreen;
 }
+}
+
 
