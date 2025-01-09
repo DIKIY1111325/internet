@@ -5,7 +5,7 @@ if (!file_exists($filePath)) {
     file_put_contents($filePath, json_encode([])); // Создание пустого массива
 }
 
-// Остальной код...
+// Обработка POST-запроса
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullName = trim($_POST['full-name']);
     $email = trim($_POST['email']);
@@ -23,8 +23,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Путь к файлу для хранения данных пользователей
-    $data = json_decode(file_get_contents($filePath), true);
+    // Загружаем данные пользователей
+    $jsonData = file_get_contents($filePath);
+    $data = json_decode($jsonData, true);
+
+    // Проверка на ошибки при декодировании JSON
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        echo "Ошибка при загрузке данных пользователей: " . json_last_error_msg();
+        exit;
+    }
 
     // Проверка на уникальность email
     foreach ($data as $user) {
@@ -34,11 +41,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
+    // Хеширование пароля
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    
+    // Проверка на ошибки хеширования
+    if ($hashedPassword === false) {
+        echo "Ошибка при хешировании пароля.";
+        exit;
+    }
+
     // Добавление нового пользователя
     $data[] = [
         'full_name' => $fullName,
         'email' => $email,
-        'password' => password_hash($password, PASSWORD_DEFAULT) // Хеширование пароля
+        'password' => $hashedPassword // Хешированный пароль
     ];
 
     // Обработка ошибок при сохранении данных
@@ -49,4 +65,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "Регистрация прошла успешно!";
 }
-?> 
+?>
