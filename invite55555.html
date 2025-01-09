@@ -22,6 +22,9 @@
 
         <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
         
+        <!-- Подключение пользовательских стилей -->
+        <link href="css/custom-styles.css" rel="stylesheet">
+        
         <style>
             /* Custom CSS to align text block */
             .text-content {
@@ -31,7 +34,7 @@
                 transform: translateY(0); /* No vertical translation */
                 color: white;
                 font-size: 50%; /* Increase font size by 50% */
-                line-height: 1.5; /* Add line height for readability */
+                line-height: 1; /* Add line height for readability */
             }
             .additional-text {
                 position: absolute;
@@ -40,8 +43,14 @@
                 transform: translateY(0); /* No vertical translation */
                 color: white;
                 font-size: 50%; /* Increase font size by 50% */
-                line-height: 1.5; /* Add line height for readability */
+                line-height: 1; /* Add line height for readability */
             }
+            .whatsapp-link:hover .bi-whatsapp,
+            .whatsapp-link:hover span {
+                color: #25D366; /* Зеленый цвет при наведении */
+            }
+
+            /* Обновлённые стили для иконок и текста мессенджеров перенесены в custom-styles.css */
         </style>
     </head>
     
@@ -62,7 +71,7 @@
                                 </span>
                             </a>
 
-                            <span class="text-white me-4 d-none d-lg-block">ПОДЕЛИТЕСЬ ССЫЛКОЙ СТАБИЛЬНЫЙ VPN</span>
+                            <span class="text-white me-4 d-none d-lg-block">ПОДЕЛИТЕСЬ ССЫЛКОЙ НА СТАБИЛЬНЫЙ VPN</span>
                             <div>
                             <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
                         </div>
@@ -124,15 +133,27 @@
                 </div>
             </div>
 
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <div class="text-content">
-                                <h3>ПОДЕЛИСЬ ССЫЛКОЙ НА НАШ САЙТ</h3>
-                                <h5>ПРОСТЫМ НАЖАТИЕМ НА ИКОНКУ</h5>
-                                <h5>И ВОЗВРАЩАЙСЯ ДЛЯ ПОЛУЧЕНИЯ</h5>
-                                <h5>БЕСПЛАТНОГО VPN ПОДКЛЮЧЕНИЯ НА ТЕСТОВЫЙ ПЕРИОД</h5>
+                    <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mx-auto">
+                                    <div class="text-content">
+                                        <div class="share-section" style="display: flex; align-items: center; gap: 20px;">
+                                            <h2 style="margin: 0;">ПОДЕЛИТЕСЬ ССЫЛКОЙ НА БЕСПЛАТНЫЙ VPN</h2>
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <a href="https://api.whatsapp.com/send?text=ССЫЛКА%20НА%20БЕСПЛАТНЫЙ%20VPN%20и%20ЛИЧНЫЙ%20VPN%20СЕРВЕР,%20может%20пригодится:%20https://dikiy1111325.github.io/site_for.github.io/" target="_blank" class="whatsapp-link" aria-label="Связаться через WhatsApp">
+                                                    <i class="bi bi-whatsapp messenger-icon"></i>
+                                                    <span class="messenger-text">WhatsApp</span>
+                                                </a> 
+                                                <a href="https://t.me/share/url?url=ССЫЛКА%20НА%20БЕСПЛАТНЫЙ%20VPN%20и%20ЛИЧНЫЙ%20VPN%20СЕРВЕР,%20может%20пригодится:%20https://dikiy1111325.github.io/site_for.github.io/" target="_blank" class="telegram-link" aria-label="Связаться через Telegram">
+                                                    <i class="bi bi-telegram messenger-icon"></i>
+                                                    <span class="messenger-text">Telegram</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <h5>И ВОЗВРАЩАЙСЯ ДЛЯ ПОЛУЧЕНИЯ</h5>
+                                        <h5>БЕСПЛАТНОГО VPN ПОДКЛЮЧЕНИЯ НА ТЕСТОВЫЙ ПЕРИОД</h5>
 <!-- 								#// вставить конки whatsapp & telegram// -->
 								<br>
 <!--                                 <p style="color: #CCCCCC;">УСТОЙЧИВЫЕ НЕ ДЕТЕКТИРУЕМЫЕ ПРОТОКОЛЫ</p>
@@ -169,9 +190,9 @@
                                 <p style="color: #CCCCCC;">ИСПОЛЬЗУЙТЕ VPN БЕСПЛАТНО В МЕСТЕ С ДРУЗЬЯМИ</p>                         
 								<br>
                                 <div> -->
-                                    <a href="index_test.html" class="custom-btn custom-border-btn btn">ПОДЕЛИТСЯ И ПРОТЕСТИРОВАТЬ VPN БЕСПЛАТНО</a>
+<!--                                     <a href="index_test.html" class="custom-btn custom-border-btn btn">ПОДЕЛИТСЯ И ПРОТЕСТИРОВАТЬ VPN БЕСПЛАТНО</a>
                                 </div>
-                            </div>
+ -->                            </div>
                         </div>
                     </div>
                 </div> -->
