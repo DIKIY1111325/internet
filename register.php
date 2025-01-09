@@ -24,14 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Путь к файлу для хранения данных пользователей
-    $filePath = 'users.json';
-
-    // Проверка, существует ли файл
-    if (file_exists($filePath)) {
-        $data = json_decode(file_get_contents($filePath), true);
-    } else {
-        $data = [];
-    }
+    $data = json_decode(file_get_contents($filePath), true);
 
     // Проверка на уникальность email
     foreach ($data as $user) {
