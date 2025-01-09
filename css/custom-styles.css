@@ -1,0 +1,34 @@
+/* Централизованные стили для иконок и текста мессенджеров */
+.messenger-icon {
+    font-size: 4rem; /* Увеличен размер иконок на 100% */
+    color: #FFFFFF;
+}
+
+.messenger-text {
+    font-size: 0.8rem; /* Уменьшен размер текста на 50% */
+    color: #FFFFFF;
+}
+
+.whatsapp-link:hover .messenger-icon,
+.whatsapp-link:hover .messenger-text {
+    color: #25D366; /* Зеленый цвет при наведении для WhatsApp */
+}
+
+.telegram-link:hover .messenger-icon,
+.telegram-link:hover .messenger-text {
+    color: #0088cc; /* Цвет Telegram при наведении */
+}
+
+/* Удалены дублирующиеся стили из HTML */
+.text-content {
+    position: absolute;
+    top: 50%; /* Центрирование по вертикали */
+    right: 15%; /* Расположение ближе к правому краю */
+    transform: translateY(-50%); /* Корректировка для точного центрирования */
+    color: white;
+    font-size: 1rem; /* Используем относительный размер для адаптивности */
+    line-height: 1; /* Добавляем высоту строки для читаемости */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
