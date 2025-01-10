@@ -1,139 +1,113 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="">
-        <meta name="author" content="">
-		
-        <title>ПЕРСОНАЛЬНЫЙ VPN СЕРВЕР</title>
-		
-        <!-- CSS FILES -->                
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-        <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
-        <link href="css/custom-styles.css" rel="stylesheet">
-    </head>
-    
-    <body>
-        <main>
-            <header class="site-header">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-12 col-12 d-flex align-items-center">
-                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
-                                <i class="bi-box"></i>
-                                <span style="font-size: 125%;">PRIVATE VPN SERVER</span>
-                            </a>
-                            <span class="text-white me-4 d-none d-lg-block">ПОДЕЛИТЕСЬ ССЫЛКОЙ НА СТАБИЛЬНЫЙ VPN</span>
-                            <div>
-                                <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">                
-                <div class="offcanvas-header">                    
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                
-                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
-                    <nav>
-                        <ul>
-                            <li><a href="invite55555.html">ПОДКЛЮЧИТЬ ТЕСТ VPN</a></li>
-                            <li><a href="register.html">РЕГИСТРАЦИЯ ИЛИ АВТОРИЗАЦИЯ</a></li>
-                            <li><a href="password-reset.html">СБРОС ПАРОЛЯ</a></li>
-                            <li><a href="404.html">404 Page</a></li>
-                            <li><a href="contact.html">КОНТАКТ</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
-                                <h2 class="modal-title" id="subscribeModalLabel">Stay up to date</h2>
-                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required>
-                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Ваш номер телефона" required pattern="[0-9]{10,15}" title="Введите номер телефона (10-15 цифр)">
-                                <button type="submit" class="form-control">АВТОРИЗАЦИЯ</button>
-                            </form>
-                        </div>
-
-                        <div class="modal-footer justify-content-center">
-                            <p>By signing up, you agree to our Privacy Notice</p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ПЕРСОНАЛЬНЫЙ VPN СЕРВЕР</title>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+    <!-- Подключение пользовательских стилей -->
+    <link href="css/custom-styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-12 col-12 d-flex align-items-center">
+                        <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
+                            <i class="bi-box"></i>
+                            <span style="font-size: 125%;">PRIVATE VPN SERVER</span>
+                        </a>
+                        <span class="text-white me-4 d-none d-lg-block">ПОДЕЛИТЕСЬ ССЫЛКОЙ НА СТАБИЛЬНЫЙ VPN</span>
+                        <div>
+                            <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
                         </div>
                     </div>
                 </div>
             </div>
+        </header>
 
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <div class="text-content">
-                                <div class="share-section" style="display: flex; align-items: center; gap: 20px;">
-                                    <h2 style="margin: 0;">ПОДЕЛИТЕСЬ ССЫЛКОЙ НА БЕСПЛАТНЫЙ VPN</h2>
-                                    <div style="display: flex; align-items: center; gap: 10px;">
-                                        <a href="https://api.whatsapp.com/send?text=ССЫЛКА%20НА%20БЕСПЛАТНЫЙ%20VPN%20и%20ЛИЧНЫЙ%20VPN%20СЕРВЕР,%20может%20пригодится:%20https://dikiy1111325.github.io/site_for.github.io/" target="_blank" class="whatsapp-link" aria-label="Связаться через WhatsApp">
-                                            <i class="bi bi-whatsapp messenger-icon"></i>
-                                            <span class="messenger-text">WhatsApp</span>
-                                        </a> 
-                                        <a href="https://t.me/share/url?url=ССЫЛКА%20НА%20БЕСПЛАТНЫЙ%20VPN%20и%20ЛИЧНЫЙ%20VPN%20СЕРВЕР,%20может%20пригодиться:%20https://dikiy1111325.github.io/site_for.github.io/" target="_blank" class="telegram-link" aria-label="Связаться через Telegram">
-                                            <i class="bi bi-telegram messenger-icon"></i>
-                                            <span class="messenger-text">Telegram</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="register.html" class="custom-btn custom-border-btn btn" disabled>УЗНАТЬ БОЛЬШЕ И ПОДКЛЮЧИТЬ VPN СЕРВЕР</a>
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+                <nav>
+                    <ul>
+                        <li><a href="invite55555.html">ПОДКЛЮЧИТЬ ТЕСТ VPN</a></li>
+                        <li><a href="register.html">РЕГИСТРАЦИЯ ИЛИ АВТОРИЗАЦИЯ</a></li>
+                        <li><a href="password-reset.html">СБРОС ПАРОЛЯ</a></li>
+                        <li><a href="404.html">404 Page</a></li>
+                        <li><a href="contact.html">КОНТАКТ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                            <h2 class="modal-title" id="subscribeModalLabel">Stay up to date</h2>
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required>
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Ваш номер телефона" required pattern="[0-9]{10,15}" title="Введите номер телефона">
+                            <button type="submit" class="form-control">АВТОРИЗАЦИЯ</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <p>By signing up, you agree to our Privacy Notice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mx-auto">
+                        <div class="text-content">
+                            <div class="share-section" style="display: flex; align-items: center; gap: 20px;">
+                                <h2 style="margin: 0;">ПОДЕЛИТЕСЬ ССЫЛКОЙ НА БЕСПЛАТНЫЙ VPN</h2>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <a href="https://api.whatsapp.com/send?text=ССЫЛКА%20НА%20БЕСПЛАТНЫЙ%20VPN%20и%20ЛИЧНЫЙ%20VPN%20СЕРВЕР, может пригодиться" class="whatsapp-link">
+                                        <i class="bi bi-whatsapp messenger-icon"></i>
+                                        <span class="messenger-text">WhatsApp</span>
+                                    </a>
+                                    <a href="https://t.me/share/url?url=ССЫЛКА%20НА%20БЕСПЛАТНЫЙ%20VPN%20и%20ЛИЧНЫЙ%20VPN%20СЕРВЕР, может пригодиться" class="telegram-link">
+                                        <i class="bi bi-telegram messenger-icon"></i>
+                                        <span class="messenger-text">Telegram</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="video-wrap">
-                    <video autoplay loop muted class="custom-video" poster="">
-                        <source src="videos/video.mp4" type="video/mp4">
-                        Ваш браузер не поддерживает тег video.
-                    </video>
-                </div>
-            </section>
-        </main>
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/init.js"></script>
-
-        <script>
-            // Добавляем обработчик события для кнопок мессенджеров
-            document.querySelectorAll('.whatsapp-link, .telegram-link').forEach(link => {
-                link.addEventListener('click', function() {
-                    // Активируем кнопку "УЗНАТЬ БОЛЬШЕ"
-                    const learnMoreButton = document.querySelector('.custom-btn');
-                    learnMoreButton.disabled = false; // Активируем кнопку
-                    learnMoreButton.classList.remove('disabled'); // Убираем класс, если он есть
-                    learnMoreButton.style.opacity = 1; // Устанавливаем видимость кнопки
-                    learnMoreButton.style.pointerEvents = 'auto'; // Разрешаем клики
-                });
-            });
-        </script>
-
-    </body>
+            </div>
+            <div class="video-wrap">
+                <video autoplay loop muted class="custom-video" poster="">
+                    <source src="videos/video.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает тег video.
+                </video>
+            </div>
+        </section>
+    </main>
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/init.js"></script>
+</body>
 </html>
