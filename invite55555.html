@@ -121,6 +121,8 @@
                                 <h2 class="modal-title" id="subscribeModalLabel">Stay up to date</h2>
 
                                 <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required="">
+                                
+                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Ваш номер телефона" required="" pattern="[0-9]{10,15}" title="Введите номер телефона (10-15 цифр)">
 
                                 <button type="submit" class="form-control">АВТОРИЗАЦИЯ</button>
                             </form>
@@ -168,7 +170,7 @@
                                 <p style="color: #CCCCCC;">ЛЕГКО ОБНОВЛЯЕМЫЕ ПРОТОКОЛЫ ШИФРОВАНИЯ</p>
                                 <br>
                                 <div> -->
-                                    <a href="register.html" class="custom-btn custom-border-btn btn">УЗНАТЬ БОЛЬШЕ И ПОДКЛЮЧИТЬ VPN СЕРВЕР</a>
+                                    <a href="register.html" class="custom-btn custom-border-btn btn" disabled>УЗНАТЬ БОЛЬШЕ И ПОДКЛЮЧИТЬ VPN СЕРВЕР</a>
                                 </div>
                             </div>
                         </div>
@@ -211,6 +213,20 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/countdown.js"></script>
         <script src="js/init.js"></script>
+
+        <script>
+            // Добавляем обработчик события для кнопок мессенджеров
+            document.querySelectorAll('.whatsapp-link, .telegram-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    // Активируем кнопку "УЗНАТЬ БОЛЬШЕ"
+                    const learnMoreButton = document.querySelector('.custom-btn');
+                    learnMoreButton.disabled = false; // Активируем кнопку
+                    learnMoreButton.classList.remove('disabled'); // Убираем класс, если он есть
+                    learnMoreButton.style.opacity = 1; // Устанавливаем видимость кнопки
+                    learnMoreButton.style.pointerEvents = 'auto'; // Разрешаем клики
+                });
+            });
+        </script>
 
     </body>
 </html>
