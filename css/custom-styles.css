@@ -19,6 +19,14 @@
     color: #0088cc; /* Цвет Telegram при наведении */
 }
 
+.whatsapp-link:active .bi-whatsapp {
+    color: green !important; /* Замените на желаемый цвет */
+}
+
+.telegram-link:active .bi-telegram {
+    color: blue !important; /* Замените на желаемый цвет */
+}
+
 /* Удалены дублирующиеся стили из HTML */
 .text-content {
     position: absolute;
