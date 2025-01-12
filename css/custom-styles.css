@@ -30,13 +30,20 @@
 /* Удалены дублирующиеся стили из HTML */
 .text-content {
     position: absolute;
-    top: 50%; /* Центрирование по вертикали */
-    right: 15%; /* Расположение ближе к правому краю */
-    transform: translateY(-50%); /* Корректировка для точного центрирования */
+    top: 20%; /* Move the text up by 20% */
+    left: 7%; /* Align it to the left */
+    transform: translateY(0); /* No vertical translation */
     color: white;
-    font-size: 1rem; /* Используем относительный размер для адаптивности */
-    line-height: 1; /* Добавляем высоту строки для читаемости */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 50%; /* Increase font size by 50% */
+    line-height: 1.5; /* Add line height for readability */
+}
+
+.additional-text {
+    position: absolute;
+    top: 20%; /* Align with the first text block */
+    right: 7%; /* Align it to the right */
+    transform: translateY(0); /* No vertical translation */
+    color: white;
+    font-size: 50%; /* Increase font size by 50% */
+    line-height: 1.5; /* Add line height for readability */
 } 
