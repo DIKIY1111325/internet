@@ -44,6 +44,9 @@
     right: 7%; /* Align it to the right */
     transform: translateY(0); /* No vertical translation */
     color: white;
-    font-size: 50%; /* Increase font size by 50% */
-    line-height: 1.5; /* Add line height for readability */
+    font-size: 1rem; /* Используем относительный размер для адаптивности */
+    line-height: 1; /* Добавляем высоту строки для читаемости */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 } 
