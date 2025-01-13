@@ -96,3 +96,11 @@ body .container .row .col-lg-6 .col-12 .mx-auto .form-floating .form-control {
 .icon-link:active .messenger-icon {
     transform: scale(0.95);
 }
+
+.whatsapp-icon:hover {
+    color: green;
+}
+
+.telegram-icon:hover {
+    color: lightblue;
+}
