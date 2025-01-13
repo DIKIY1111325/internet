@@ -1,193 +1,151 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
-		
-        <title>ПЕРСОНАЛЬНЫЙ VPN СЕРВЕР</title>
-		
-        <!-- CSS FILES -->                
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Персональный VPN сервер с высоким уровнем безопасности и удобством использования.">
+    <meta name="author" content="VPN Team">
 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
-        
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Персональный VPN Сервер</title>
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS FILES -->                
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
 
-        <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
-        
-        <style>
-            /* Custom CSS to align text block */
-            .text-content {
-                position: absolute;
-                top: 20%; /* Move the text up by 40% */
-                left: 7%; /* Align it to the left */
-                transform: translateY(0); /* No vertical translation */
-                color: white;
-                font-size: 50%; /* Increase font size by 50% */
-                line-height: 1.5; /* Add line height for readability */
-            }
-            .additional-text {
-                position: absolute;
-                top: 20%; /* Align with the first text block */
-                right: 7%; /* Align it to the right */
-                transform: translateY(0); /* No vertical translation */
-                color: white;
-                font-size: 50%; /* Increase font size by 50% */
-                line-height: 1.5; /* Add line height for readability */
-            }
-        </style>
-    </head>
-    
-    <body>
+    <style>
+        /* Custom CSS */
+        .text-content, .additional-text {
+            position: absolute;
+            top: 20%;
+            color: white;
+            font-size: 50%;
+            line-height: 1.5;
+        }
 
-        <main>
+        .additional-text {
+            right: 7%;
+        }
 
-            <header class="site-header">
-                <div class="container">
-                    <div class="row justify-content-between">
+        /* Общие стили для иконок и текста мессенджеров */
+        .messenger-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-                        <div class="col-lg-12 col-12 d-flex align-items-center">
-                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
-                                <i class="bi-box"></i>
+        .messenger-icon {
+            font-size: 5rem;
+            color: #FFFFFF;
+        }
 
-                                <span style="font-size: 125%;">
-                                    PRIVATE VPN SERVER
-                                </span>
-                            </a>
+        .messenger-text {
+            font-size: 0.8rem;
+            color: #FFFFFF;
+        }
 
-                            <span class="text-white me-4 d-none d-lg-block">ЛИЧНЫЙ VPN СЕРВЕР</span>
-                            <div>
-                            <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
-                        </div>
+        .messenger-link:hover .messenger-icon,
+        .messenger-link:hover .messenger-text {
+            background-color: #25D366;
+        }
 
-                    </div>
-                </div>
-            </header>
+        .messenger-link:active .messenger-icon {
+            background-color: green;
+        }
 
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">                
-                <div class="offcanvas-header">                    
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                
-                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="register.html">РЕГИСТРАЦИЯ ИЛИ АВТОРИЗАЦИЯ</a>
-                            </li>
+        .messenger-link:active .messenger-text {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
 
-                            <li>
-                                <a href="password-reset.html">СБРОС ПАРОЛЯ</a>
-                            </li>
-
-                            <li>
-                                <a href="404.html">404 Page</a>
-                            </li>
-
-                            <li>
-                                <a href="contact.html">КОНТАКТ</a>
-                            </li>
-                        </ul>
-                    </nav>
+<main>
+    <header class="site-header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-12 d-flex align-items-center">
+                    <a class="site-header-text me-auto" href="index.html">
+                        <i class="bi-box"></i>
+                        <span style="font-size: 125%;">ЛИЧНЫЙ VPN СЕРВЕР</span>
+                    </a>
+                    <span class="text-white me-4 d-none d-lg-block">ИСПОЛЬЗУЙТЕ ТЕХНОЛОГИИ С ПОВЫШЕННЫМ УРОВНЕМ БЕЗОПАСНОСТИ</span>
+                    <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button"></a>
                 </div>
             </div>
+        </div>
+    </header>
 
-            <!-- Modal -->
-            <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
+    <div class="offcanvas offcanvas-end" id="offcanvasMenu" tabindex="-1">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav>
+                <ul>
+                    <li><a href="register.html">Регистрация или Авторизация</a></li>
+                    <li><a href="password-reset.html">Сброс Пароля</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
-                        <div class="modal-body">
-                            <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
-                                <h2 class="modal-title" id="subscribeModalLabel">Stay up to date</h2>
-
-                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required="">
-
-                                <button type="submit" class="form-control">АВТОРИЗАЦИЯ</button>
-                            </form>
-                        </div>
-
-                        <div class="modal-footer justify-content-center">
-                            <p>By signing up, you agree to our Privacy Notice</p>
-                        </div>
-                    </div>
-                </div>
+    <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+        <div class="container">
+            <div class="text-content">
+                <h5>Быстрое и удобное подключение</h5>
+                <ul style="color: #CCCCCC;">
+                    <li>Полностью настроен для использования</li>
+                    <li>Интуитивно понятное управление</li>
+                    <li>Обновляемые протоколы шифрования</li>
+                    <li>Удобная настройка дополнительных функций</li>
+                </ul>
             </div>
 
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <div class="text-content">
-                                <h3>ИСПОЛЬЗОВАТЬ СЕЙЧАС</h3>
-                                <h5>БЫСТРОЕ И УДОБНОЕ ПОДКЛЮЧЕНИЕ</h5>
-                                <h5>VPN НА СОБСТВЕННОМ СЕРВЕРЕ</h5>
-								<br>
-                                <p style="color: #CCCCCC;">УСТОЙЧИВЫЕ НЕ ДЕТЕКТИРУЕМЫЕ ПРОТОКОЛЫ</p>
-                                <p style="color: #CCCCCC;">ПРИВАТНОСТЬ И БЕЗОПАСТНОСТЬ ДАННЫХ</p>								
-                                <p style="color: #CCCCCC;">В ЛЮБЫХ СЕТЯХ, ПРИЛОЖЕНИЯХ И СЕРВИСАХ</p>
-                                <br>
-                                <h3>ЛИЧНЫЙ VPN СЕРВЕР</h3>   
-								<br>
-                                <p style="color: #CCCCCC;">ПОЛНОСТЬЮ НАСТРОЕН ДЛЯ ИСПОЛЬЗОВАНИЯ</p>
-                                <p style="color: #CCCCCC;">ИНТУИТИВНО ПОНЯТНОЕ УПРАВЛЕНИЕ</p>
-                                <p style="color: #CCCCCC;">УДОБНАЯ НАСТРОЙКА ДОПОЛНИТЕЛЬНЫХ ФУНКЦИЙ</p>
-                                <p style="color: #CCCCCC;">ОБНОВЛЯЕМЫЕ ПРОТОКОЛЫ ШИФРОВАНИЯ</p>
-                                <br>
-                                <div>
-                                    <a href="register.html" class="custom-btn custom-border-btn btn">УЗНАТЬ БОЛЬШЕ И ПОДКЛЮЧИТЬ VPN СЕРВЕР</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <div class="additional-text">
-                                <h3>VPN БЕСПЛАТНО</h3>
-                                <h5>ТЕСТ ПЕРИОД НОВОМУ ПОЛЬЗОВАТЕЛЮ</h5>
-								<h5>ПРОДЛЯЙТЕ ЕГО РАБОТУ РЕКОМЕНДУЯ НАС </h5>
-								<br>
-								<p style="color: #CCCCCC;">ЗА ПОДКЛЮЧЕНИЕ ПО ВАШЕЙ РЕКОМЕНДАЦИИ(ИНВАЙТУ)</p>
-                                <p style="color: #CCCCCC;">ПРЕДОСТАВИМ ПРИГЛАШЕННОМУ БЕСПЛАТНЫЙ VPN</p>
-                                <p style="color: #CCCCCC;">И ПРОДЛИМ СРОК ДЕЙСТВИЯ ВАШЕГО ТАРИФА</p>
-                                <br>								
-                                <h3>ЗА НЕСКОЛЬКО КЛИКОВ</h3>
-								<br> 
-								<p style="color: #CCCCCC;">ПОДЕЛИВШИСЬ ССЫЛКОЙ О НАС В ЛЮБОМ МЕССЕНДЖЕРЕ</p>
-                                <p style="color: #CCCCCC;">ПОЛУЧИТЕ ТЕСТОВЫЙ ПЕРИОД ИСПОЛЬЗОВАНИЯ VPN</p>
-                                <p style="color: #CCCCCC;">ИЛИ ПРОДЛЕНИЕ ДЕЙСТВУЮЩЕГО ТАРИФА БЕСПЛАТНО</p>                         
-                                <p style="color: #CCCCCC;">ИСПОЛЬЗУЙТЕ VPN БЕСПЛАТНО В МЕСТЕ С ДРУЗЬЯМИ</p>                         
-								<br>
-                                <div>
-                                    <a href="index_test.html" class="custom-btn custom-border-btn btn">ПОДЕЛИТСЯ И ПРОТЕСТИРОВАТЬ VPN БЕСПЛАТНО</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="additional-text">
+                <h5>Безопаснее и выгоднее обычных VPN сервисов</h5>
+                <ul style="color: #CCCCCC;">
+                    <li>Доступ для управления сервером только у вас</li>
+                    <li>Простое подключение любого количества пользователей</li>
+                    <li>Возможность использования VPN на любом устройстве</li>
+                    <li>Приватность сетевого трафика и его гибкая маршрутизация</li>
+                </ul>
+            </div>
 
-                <div class="video-wrap">
-                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                        <source src="videos/video.mp4" type="video/mp4">
-                        Ваш браузер не поддерживает тег video.
-                    </video>
-                </div>
-            </section>
-        </main>
+                  
+            <div>
+                <button id="connectBtn" class="custom-btn btn btn-primary mt-4" disabled>Узнать больше и подключить VPN сервер</button>
+            </div>
+        </div>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/init.js"></script>
+        <div class="video-wrap">
+            <video autoplay loop muted class="custom-video">
+                <source src="videos/video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает тег video.
+            </video>
+        </div>
+    </section>
+</main>
 
-    </body>
+<!-- JAVASCRIPT FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    // Enable "Connect" button only after messenger link click
+    const connectBtn = document.getElementById('connectBtn');
+    const messengerLinks = document.querySelectorAll('.whatsapp-link, .telegram-link');
+
+    messengerLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            connectBtn.disabled = false;
+        });
+    });
+</script>
+</body>
 </html>
