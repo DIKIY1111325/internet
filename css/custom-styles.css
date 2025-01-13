@@ -1,7 +1,8 @@
-/*
+/* custom-styles.css */
 body .container .row .col-lg-6 .col-12 .mx-auto .form-floating .form-control {
     /* ваши стили */
 }
+
 
 /* Общие стили для иконок и текста мессенджеров */
 .messenger-link {
@@ -12,7 +13,7 @@ body .container .row .col-lg-6 .col-12 .mx-auto .form-floating .form-control {
 
 .messenger-icon {
     font-size: 5rem; /* Замените на желаемый размер */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .messenger-text {
@@ -22,15 +23,15 @@ body .container .row .col-lg-6 .col-12 .mx-auto .form-floating .form-control {
 
 .messenger-link:hover .messenger-icon,
 .messenger-link:hover .messenger-text {
-    color: #25D366; /* Зеленый цвет при наведении для WhatsApp */
+    background-color: #25D366; /* Зеленый цвет при наведении для WhatsApp */
 }
 
 .messenger-link:active .messenger-icon {
-    color: green; /* Замените на желаемый цвет */
+    background-color: green; /* Замените на желаемый цвет */
 }
 
 .messenger-link:active .messenger-text {
-    color: blue; /* Замените на желаемый цвет */
+    background-color: blue; /* Замените на желаемый цвет */
 }
 
 /* Удалены дублирующиеся стили из HTML */
@@ -47,11 +48,11 @@ body .container .row .col-lg-6 .col-12 .mx-auto .form-floating .form-control {
 }
 
 /* Добавлены общие стили для ссылок на WhatsApp и Telegram */
-.whatsapp-link {
+.whatsapp-icon {
     color: #25D366; /* Зеленый цвет для WhatsApp */
 }
 
-.telegram-link {
+.telegram-icon {
     color: #0088cc; /* Цвет Telegram */
 }
 
@@ -95,4 +96,3 @@ body .container .row .col-lg-6 .col-12 .mx-auto .form-floating .form-control {
 .icon-link:active .messenger-icon {
     transform: scale(0.95);
 }
-
