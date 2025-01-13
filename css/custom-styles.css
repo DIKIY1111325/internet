@@ -1,6 +1,12 @@
-/* Централизованные стили для иконок и текста мессенджеров */
+/* Общие стили для иконок и текста мессенджеров */
+.messenger-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .messenger-icon {
-    font-size: 4rem; /* Увеличен размер иконок на 100% */
+    font-size: 5rem; /* Замените на желаемый размер */
     color: #FFFFFF;
 }
 
@@ -9,44 +15,37 @@
     color: #FFFFFF;
 }
 
-.whatsapp-link:hover .messenger-icon,
-.whatsapp-link:hover .messenger-text {
+.messenger-link:hover .messenger-icon,
+.messenger-link:hover .messenger-text {
     color: #25D366; /* Зеленый цвет при наведении для WhatsApp */
 }
 
-.telegram-link:hover .messenger-icon,
-.telegram-link:hover .messenger-text {
-    color: #0088cc; /* Цвет Telegram при наведении */
+.messenger-link:active .messenger-icon {
+    color: green; /* Замените на желаемый цвет */
 }
 
-.whatsapp-link:active .bi-whatsapp {
-    color: green !important; /* Замените на желаемый цвет */
-}
-
-.telegram-link:active .bi-telegram {
-    color: blue !important; /* Замените на желаемый цвет */
+.messenger-link:active .messenger-text {
+    color: blue; /* Замените на желаемый цвет */
 }
 
 /* Удалены дублирующиеся стили из HTML */
-.text-content {
+.text-content, .additional-text {
     position: absolute;
     top: 20%; /* Move the text up by 20% */
-    left: 7%; /* Align it to the left */
-    transform: translateY(0); /* No vertical translation */
     color: white;
     font-size: 50%; /* Increase font size by 50% */
     line-height: 1.5; /* Add line height for readability */
 }
 
 .additional-text {
-    position: absolute;
-    top: 20%; /* Align with the first text block */
     right: 7%; /* Align it to the right */
-    transform: translateY(0); /* No vertical translation */
-    color: white;
-    font-size: 1rem; /* Используем относительный размер для адаптивности */
-    line-height: 1; /* Добавляем высоту строки для читаемости */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
+}
+
+/* Добавлены общие стили для ссылок на WhatsApp и Telegram */
+.whatsapp-link {
+    color: #25D366; /* Зеленый цвет для WhatsApp */
+}
+
+.telegram-link {
+    color: #0088cc; /* Цвет Telegram */
+}
