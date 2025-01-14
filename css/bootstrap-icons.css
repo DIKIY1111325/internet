@@ -20,6 +20,44 @@ url("../fonts/bootstrap-icons.woff?8d200481aa7f02a2d63a331fc782cfaf") format("wo
   -moz-osx-font-smoothing: grayscale;
 }
 
+.messenger-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon-link {
+  text-decoration: none;
+}
+
+.messenger-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+/* Default styles for icons */
+.whatsapp {
+  background-image: url('icons/whatsapp.svg');
+}
+.telegram {
+  background-image: url('icons/telegram.svg');
+}
+
+/* Hover and click effects */
+.icon-link:hover .messenger-icon,
+.icon-link:focus .messenger-icon {
+  filter: brightness(1.2) hue-rotate(90deg);
+}
+
+.icon-link:active .messenger-icon {
+  transform: scale(0.95);
+}
+
 .bi-123::before { content: "\f67f"; }
 .bi-alarm-fill::before { content: "\f101"; }
 .bi-alarm::before { content: "\f102"; }
